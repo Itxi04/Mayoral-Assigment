@@ -1,0 +1,25 @@
+<!--Filters-->
+
+<app-filters (search)="onSearch($event)" ></app-filters>
+
+<!--Elements Card-->
+
+<div class="cardOne">
+  <div class="row">
+    <div class="col-5 col-md-2" *ngFor="let element of arrElements">
+      <mat-card class="card">
+        <img class="img" mat-card-image src="{{this.element?.img}}">
+        <mat-card-content class="content">
+          <ul>
+            <li>{{element?.name}}</li>
+            <li>{{element?.price}}€</li>
+            <a href="more colors">Más colores 2</a>
+          </ul>
+        </mat-card-content>
+        <mat-card-actions class="button">
+          <button mat-raised-button mat-button color="primary">AÑADIR</button>
+        </mat-card-actions>
+    </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class=" filters m-5 d-flex justify-content-between">
+          
+    <div class="one">
+        <mat-form-field appearance="legacy">
+             <mat-label>Buscar</mat-label>
+             <input matInput placeholder="Placeholder" (input)="collectDataSearch($event)">
+             <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+              
+     <div class="two">
+        <mat-form-field appearance="legacy">
+            <mat-label>Ordenar</mat-label>
+            <mat-select disableRipple>
+                <mat-option (click)="ascendente()" value="1">Precio ascendente</mat-option>
+                <mat-option (click)="descendente()" value="2">Precio descendete</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    
+</div>    
+    
+      
+
+  
+        
+    
+
+  
